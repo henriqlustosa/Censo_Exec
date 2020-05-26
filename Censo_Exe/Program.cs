@@ -34,7 +34,7 @@ namespace Censo_Exe
 
         private static void Main(string[] args)
         {
-
+            DateTime today = DateTime.Now;
 
             DataTable dataCenso = new DataTable();
 
@@ -62,7 +62,7 @@ namespace Censo_Exe
                 String error = ex.Message;
 
             }
-           String excelFilePath = "C:\\Users\\h013026\\Documents\\Atividades";
+           String excelFilePath = "C:\\Users\\h013026\\Documents\\Atividades\\Censo" + today.ToString().Replace('/', '_').Replace(' ','_').Replace(':','_') ;
 
             try
             {
@@ -97,6 +97,8 @@ namespace Censo_Exe
                 {
                     try
                     {
+                        //workSheet.Name = "Censo" + today.ToString().Replace('/', '_');
+                        workSheet.Name = "Censo";
                         workSheet.SaveAs(excelFilePath);
                         excelApp.Quit();
                         Console.WriteLine("Excel file saved!");
