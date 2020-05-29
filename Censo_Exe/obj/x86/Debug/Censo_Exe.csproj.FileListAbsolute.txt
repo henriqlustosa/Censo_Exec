@@ -23,3 +23,4 @@ C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\o
 C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.csproj.CopyComplete
 C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.exe
 C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.pdb
+C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.csprojAssemblyReference.cache

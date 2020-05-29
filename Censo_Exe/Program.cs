@@ -1,13 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
-using System.Drawing;
 using System.Data;
 using System.Reflection;
-
 using System.Xml.Serialization;
 
 namespace Censo_Exe
@@ -60,9 +57,9 @@ namespace Censo_Exe
             catch (Exception ex)
             {
                 String error = ex.Message;
-
+                Console.ReadKey();
             }
-           String excelFilePath = "C:\\Users\\h013026\\Documents\\Atividades\\Censo" + today.ToString().Replace('/', '_').Replace(' ','_').Replace(':','_') ;
+           String excelFilePath = "\\\\hspmins2\\NIR_Nucleo_Interno_Regulacao\\2359\\Censo" + today.ToString().Replace('/', '_').Replace(' ','_').Replace(':','_') ;
 
             try
             {
@@ -74,7 +71,7 @@ namespace Censo_Exe
                 excelApp.Workbooks.Add();
 
                 // single worksheet
-                Microsoft.Office.Interop.Excel._Worksheet workSheet = excelApp.ActiveSheet;
+                Microsoft.Office.Interop.Excel._Worksheet workSheet = (Microsoft.Office.Interop.Excel._Worksheet) excelApp.ActiveSheet;
 
                 // column headings
                 for (var i = 0; i < dataCenso.Columns.Count; i++)
@@ -88,7 +85,18 @@ namespace Censo_Exe
                     // to do: format datetime values before printing
                     for (var j = 0; j < dataCenso.Columns.Count; j++)
                     {
-                        workSheet.Cells[i + 2, j + 1] = dataCenso.Rows[i][j];
+                        if (j==9 || j == 10 || j == 13 || j == 24 || j == 25  )
+                        {
+                            var dt = dataCenso.Rows[i][j];
+                            workSheet.Cells[i + 2, j + 1] = Convert.ToDateTime(dataCenso.Rows[i][j]);
+                          
+                        }
+                        else
+                        {
+                            workSheet.Cells[i + 2, j + 1] = dataCenso.Rows[i][j];
+                           
+
+                        }
                     }
                 }
 
@@ -107,6 +115,7 @@ namespace Censo_Exe
                     {
                         throw new Exception("ExportToExcel: Excel file could not be saved! Check filepath.\n"
                                             + ex.Message);
+                        Console.ReadKey();
                     }
                 }
                 else
@@ -117,15 +126,17 @@ namespace Censo_Exe
             catch (Exception ex)
             {
                 throw new Exception("ExportToExcel: \n" + ex.Message);
+                Console.ReadKey();
             }
+            Console.ReadKey();
 
         }
 
 
     }
-   
-     
+
     
+
 
 
 
@@ -176,8 +187,8 @@ namespace Censo_Exe
 
         public string nr_procedimento { get; set; }
 
-        public string dt_alta_medica { get; set; }
-        public string Dt_saida_paciente { get; set; }
+        public string  dt_alta_medica { get; set; }
+        public string  Dt_saida_paciente { get; set; }
 
     
         internal static IEnumerable<PropertyInfo> GetProperties()
