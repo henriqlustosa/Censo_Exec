@@ -79,24 +79,24 @@ namespace Censo_Exe
                     workSheet.Cells[1, i + 1] = dataCenso.Columns[i].ColumnName;
                 }
 
-                // rows
+                 //rows
                 for (var i = 0; i < dataCenso.Rows.Count; i++)
                 {
                     // to do: format datetime values before printing
                     for (var j = 0; j < dataCenso.Columns.Count; j++)
                     {
-                        if (j==9 || j == 10 || j == 13 || j == 24 || j == 25  )
+                       /* if (j==9 || j == 10 || j == 13 || j == 24 || j == 25  )
                         {
                             var dt = dataCenso.Rows[i][j];
                             workSheet.Cells[i + 2, j + 1] = Convert.ToDateTime(dataCenso.Rows[i][j]);
                           
                         }
                         else
-                        {
+                        {*/
                             workSheet.Cells[i + 2, j + 1] = dataCenso.Rows[i][j];
                            
 
-                        }
+                       // }
                     }
                 }
 
@@ -113,9 +113,8 @@ namespace Censo_Exe
                     }
                     catch (Exception ex)
                     {
-                        throw new Exception("ExportToExcel: Excel file could not be saved! Check filepath.\n"
-                                            + ex.Message);
-                        Console.ReadKey();
+                        throw new Exception("ExportToExcel: Excel file could not be saved! Check filepath.\n" + ex.Message);
+                       
                     }
                 }
                 else
@@ -125,14 +124,17 @@ namespace Censo_Exe
             }
             catch (Exception ex)
             {
-                throw new Exception("ExportToExcel: \n" + ex.Message);
-                Console.ReadKey();
+                throw new Exception(message: "ExportToExcel: \n" + GetMessage(ex));
+
             }
             Console.ReadKey();
 
         }
 
-
+        private static string GetMessage(Exception ex)
+        {
+            return ex.Message;
+        }
     }
 
     
@@ -144,50 +146,41 @@ namespace Censo_Exe
 
     public class Censo
     {
+      
 
+        public string Cd_prontuario { get; set; }
 
-        public string cd_prontuario { get; set; }
+        public string Nm_paciente { get; set; }
 
-        public string nm_paciente { get; set; }
+        public string In_sexo { get; set; }
+        public string Nr_idade { get; set; }
 
-        public string in_sexo { get; set; }
-        public string nr_idade { get; set; }
+        public string Nr_quarto { get; set; }
 
-        public string nr_quarto { get; set; }
+        public string Dt_internacao_data { get; set; }
+        public string Dt_internacao_hora { get; set; }
+        public string Dt_ultimo_evento_data { get; set; }
+        public string Dt_ultimo_evento_hora { get; set; }
 
-        public string nr_leito { get; set; }
-        public string nm_alta { get; set; }
+        public string Nascimento { get; set; }
+        public string Nm_unidade_funcional { get; set; }
 
-        public string nm_clinica { get; set; }
+        public string Nm_especialidade { get; set; }
 
-        public string nm_unidade_funcional { get; set; }
+        public string Nm_medico { get; set; }
+    
 
+        public string Nm_origem { get; set; }
 
-        public string nm_acomodacao { get; set; }
+        public string Sg_cid { get; set; }
+        public string Descricao_cid { get; set; }
 
-        public string st_leito { get; set; }
+   
+        public string Vinculo { get; set; }
 
-        public string dt_internacao { get; set; }
-        public string dt_entrada_setor { get; set; }
+        public string Nr_convenio { get; set; }
 
-        public string nm_especialidade { get; set; }
-
-        public string nm_medico { get; set; }
-        public string dt_ultimo_evento { get; set; }
-
-        public string nm_origem { get; set; }
-
-        public string sg_cid { get; set; }
-        public string tx_observacao { get; set; }
-
-        public string nr_convenio_plano { get; set; }
-
-        public string nr_crm_profissional { get; set; }
-        public string nm_carater_internacao { get; set; }
-
-        public string nr_procedimento { get; set; }
-
-        public string  dt_alta_medica { get; set; }
+        public string Tempo { get; set; }
         public string  Dt_saida_paciente { get; set; }
 
     

@@ -24,3 +24,29 @@ C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\o
 C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.exe
 C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.pdb
 C:\Users\h013026\OneDrive - Default Directory\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.csprojAssemblyReference.cache
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Censo_Exe.exe.config
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Censo_Exe.exe
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Censo_Exe.pdb
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Buffers.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Memory.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Text.Encodings.Web.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.ValueTuple.dll
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\Newtonsoft.Json.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Buffers.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Memory.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Numerics.Vectors.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Text.Encodings.Web.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\bin\x86\Debug\System.ValueTuple.xml
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.csprojAssemblyReference.cache
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.csproj.CoreCompileInputs.cache
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.csproj.CopyComplete
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.exe
+C:\Users\h013026\OneDrive\Workspace_C#\Censo_Exe\Censo_Exe\obj\x86\Debug\Censo_Exe.pdb
